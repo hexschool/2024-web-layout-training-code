@@ -1,0 +1,57 @@
+.header {
+  color: white;
+  padding: 16px 0;
+  width: 100%;
+  @include mobile-larger{
+    padding-bottom: 0;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 48px;
+    @include mobile-larger{
+      margin-left: 12px;
+      margin-bottom: 12px;
+    }
+  }
+  
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mobile-larger{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .nav {
+    font-size: 20px;
+    display: flex;
+    @include mobile-larger{
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    &-item{
+      @include mobile-larger{
+        width: 50%;
+        border: solid 1px white;
+        text-align: center; 
+      }
+    }
+    &-item a {
+      padding: 8px 32px;
+      @include mobile-larger{
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+@include mobile-larger{
+  .px-sm-0{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

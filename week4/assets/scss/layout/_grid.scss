@@ -1,0 +1,44 @@
+$gap: 24px;
+$columns-num: 12;
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: $gap/2;
+  padding-right: $gap/2;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -($gap/2);
+  margin-left: -($gap/2);
+}
+
+@for $i from 1 through $columns-num{
+  .col-#{$i} {
+    width: 100% * ($i / $columns-num);
+    padding-left: $gap/2;
+    padding-right: $gap/2;
+  }
+}
+
+@include pad{
+  @for $i from 1 through $columns-num{
+    .col-md-#{$i} {
+      width: 100% * ($i / $columns-num);
+      padding-left: $gap/2;
+      padding-right: $gap/2;
+    }
+  }
+}
+
+@include mobile{
+  @for $i from 1 through $columns-num{
+    .col-sm-#{$i} {
+      width: 100% * ($i / $columns-num);
+      padding-left: $gap/2;
+      padding-right: $gap/2;
+    }
+  }
+}

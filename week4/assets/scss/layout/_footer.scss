@@ -1,0 +1,74 @@
+.footer {
+  padding-top: 48px;
+  padding-bottom: 32px;
+  color: white;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px white;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+  .nav {
+    display: flex;
+    margin-bottom: 26px;
+    @include mobile-larger{
+      display: none;
+    }
+    &-item a {
+      padding: 12px 32px;
+    }
+  }
+  .social-list {
+    display: flex;
+    img {
+      width: 48px;
+      @include mobile-larger{
+        width: 24px;
+      }
+    }
+    a {
+      padding: 0 16px;
+      @include pad{
+        padding: 0 8px;
+      }
+    }
+  }
+  .contact-list {
+    font-size: 36px;
+    font-family: "Noto Sans TC", sans-serif;
+    @include mobile-larger{
+      font-size: 16px;
+    }
+    .material-symbols-outlined {
+      font-size: 48px;
+      vertical-align: middle;
+      margin-right: 20px;
+      @include mobile-larger{
+        font-size: 24px;
+      }
+    }
+    li:not(last-child) {
+      margin-bottom: 8px;
+    }
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    @include mobile-larger{
+      flex-direction: column;
+    }
+  }
+  .privacy-list {
+    display: flex;
+    @include mobile-larger{
+      flex-direction: column;
+    }
+    a {
+      padding: 0 24px;
+      @include mobile-larger{
+        padding-left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+
+/* utilities */
+
+.text-center {
+  text-align: center;
+}
+
+.bg-light {
+  background: $bg-light;
+}
+
+.bg-dark {
+  background: $primary;
+}
+
+.text-white {
+  color: white;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}

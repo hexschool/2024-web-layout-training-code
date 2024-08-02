@@ -1,0 +1,93 @@
+.content-title {
+  border-left: 8px solid $primary;
+  font-size: 48px;
+  font-weight: bold;
+  padding-left: 16px;
+  margin-bottom: 32px;
+}
+
+.store{
+  padding-top: 96px;
+  padding-bottom: 80px;
+}
+
+.store-search {
+  width: 33.3333%;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.store-search-label {
+  font-size: 24px;
+  margin-right: 16px;
+}
+
+.store-search-select {
+  font-size: 18px;
+  flex-grow: 1;
+  border-radius: 0px;
+  border: #ced4da 1px solid;
+  color: #495057;
+  padding: 6px 12px;
+  appearance: none;
+  position: relative;
+  background: url(../images/select-arrow.svg);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+
+.store-search-select:focus {
+  outline: solid 1px $primary;
+  border: none;
+  box-shadow: 0 0px 0px 4px rgba(170, 6, 1, 0.3);
+}
+
+.store-list{
+  display: flex;
+  flex-wrap: wrap;
+  // gap: 48px 24px;
+  row-gap: 48px;
+  font-size: 20px;
+}
+
+.store-item{
+  // width: calc(33.3333% - 16px);
+}
+
+.store-btn{
+  background: #000;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 19px;
+}
+
+.store-list .card-title{
+  font-size: 24px;
+  border-bottom: solid 1px #00000020;
+  padding: 8px 24px;
+}
+
+.store-list .card-body{
+  border: solid 1px #00000020;
+}
+
+.store-list .card-desc{
+  padding: 20px 24px;
+}
+
+.store-list .card-desc li{
+  display: flex;
+  align-items: flex-start;
+}
+
+.store-list .card-desc .material-symbols-outlined{
+  margin-right: 8px;
+  font-size: 24px;
+}
+
+.store-list .card-desc li:not(last-child){
+  margin-bottom: 8px;
+}

@@ -1,0 +1,262 @@
+.banner {
+  color: $secondary;
+  background-image: url("../images/home-header.png");
+  background-size: cover;
+  height: calc(100vh - 80px);
+  @include pad{
+    background-image: url("../images/home-header-sm.png");
+  }
+  &-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  &-title {
+    font-size: 64px;
+    font-weight: 700;
+  }
+  &-subtitle {
+    font-size: 36px;
+  }
+  &-link {
+    padding: 6px 12px;
+    color: white;
+    background: $primary;
+    font-size: 20px;
+  }
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  .card {
+    width: calc(25% - 18px);
+    @include pad{
+      width: calc(50% - 12px);
+    }
+    @include mobile{
+      width: 100%;
+    }
+    &-header {
+      margin-bottom: 8px;
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: $secondary;
+    }
+    &-img {
+      width: 100px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.classic-list {
+  display: flex;
+  gap: 24px;
+  @include pad{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card{
+    @include pad{
+      max-width: 336px;
+    }
+  }
+  .card-title {
+    font-size: 48px;
+    color: $primary;
+    font-style: italic;
+    font-weight: 900;
+    text-align: center;
+  }
+}
+
+.recommend-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  .card {
+    box-shadow: 0px 2px 6px #00000029;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    width:calc(25% - 18px);
+    @include pad{
+      width: calc(50% - 12px);
+    }
+    @include mobile{
+      width: 100%;
+    }
+    &-body {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    &-desc {
+      margin-bottom: 72px;
+    }
+    &-title {
+      margin-bottom: 8px;
+    }
+    &-time {
+      color: #707070;
+      font-size: 14px;
+      margin-top: auto;
+    }
+  }
+}
+
+.cobrand {
+  background-image: url("../images/index-bg.png");
+  background-size: cover;
+  @include pad{
+    background-image: url("../images/index-bg-md.png");
+  }
+
+  @include mobile{
+    background-image: url("../images/index-bg-sm.png");
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+      width: 50%;
+      @include pad{
+        width: 100%;
+      }
+      &-title {
+        font-size: 48px;
+        font-style: italic;
+        color: $primary;
+        font-weight: 900;
+        text-align: center;
+        background: white;
+      }
+      &-img {
+        height: 240px;
+        background-position: center;
+      }
+    }
+  }
+}
+
+.contact-wrapper {
+  max-width: 636px;
+  margin: 0 auto;
+}
+
+.contact-desc {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.contact-form-input {
+  display: block;
+  width: 100%;
+  background: $bg-light;
+  outline: 0;
+  border: solid 1px black;
+  padding: 6px 12px;
+  font-size: 16px;
+  transition: box-shadow 0.5s;
+}
+
+.contact-form-input:focus {
+  box-shadow: 0 0px 0px 4px rgba(170, 6, 1, 0.3);
+}
+
+.contact-form-input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.contact-form-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form li:not(last-child) {
+  margin-bottom: 16px;
+}
+
+.contact-form .agree-item {
+  margin-bottom: 48px;
+}
+
+.contact-form .agree-item input {
+  display: none;
+}
+
+.contact-form .agree-item label {
+  position: relative;
+  padding-left: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-form .agree-item label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+  border: solid 2px #000;
+  background: $bg-light;
+  border-radius: 2px;
+}
+
+.contact-form .agree-item label::after {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border-bottom: solid 2px white;
+  border-right: solid 2px white;
+  transform: rotate(45deg);
+}
+
+.contact-form .agree-item input:checked ~ label::before {
+  background: #000;
+}
+
+.contact-form .agree-item input:checked ~ label::after {
+  display: block;
+}
+
+.contact-form-btn {
+  display: block;
+  width: 100%;
+  max-width: 416px;
+  background: $primary;
+  color: white;
+  border: none;
+  padding: 16px 0px;
+  margin: 0 auto;
+}
+
+.index-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 48px;
+  text-align: center;
+  color: $secondary;
+}
+
+.content-padding {
+  padding: 80px 0;
+}
