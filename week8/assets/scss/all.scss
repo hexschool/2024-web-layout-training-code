@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./utils/variables";
+@import "./utils/custom-colors";
+
+@import "../../node_modules/bootstrap";
+
+@import "./base/base.scss";
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+@import "./pages/index.scss";

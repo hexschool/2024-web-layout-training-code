@@ -1,0 +1,71 @@
+* {
+  // outline: solid 1px;
+}
+
+.pay {
+  .alert {
+    display: none;
+  }
+  input:checked ~ .alert {
+    display: block;
+  }
+}
+
+.bill {
+  .modal-dialog {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .modal-content {
+    border-radius: 12px 12px 0 0;
+  }
+
+  .modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translate(0, 50px);
+  }
+
+  .modal.show .modal-dialog{
+    transform: none;
+  }
+}
+
+
+.teacher{
+  .card{
+    max-width: 416px;
+  }
+  .card-img-top{
+    margin-left: 80px;
+    width: auto;
+  }
+  .card-body{
+    background: white;
+    margin-right: 32px;
+    margin-top: -40px;
+    border-radius: 12px;
+  }
+}
+
+.title-deco{
+  position: relative;
+  &::before{
+    content:"";
+    position: absolute;
+    z-index: -1;
+    left: -30px;
+    top: -30px;
+    background-image: url(../images/deco/flower-1.png);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.result .modal{
+  backdrop-filter: blur(8px);
+}
